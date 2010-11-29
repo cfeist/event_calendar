@@ -26,7 +26,7 @@ module EventCalendar
       end
       strip_start, strip_end = get_start_and_end_dates(shown_date, first_day_of_week)
       if events == nil
-	events = events_for_date_range(strip_start, strip_end, find_options)
+        events = events_for_date_range(strip_start, strip_end, find_options)
       end
 
       event_strips = create_event_strips(strip_start, strip_end, events)
